@@ -31,17 +31,19 @@ void heapify(int arr[], int n, int i)
 
 void heap_sort(int a[], int N)
 {
-    int i;
+    int i, count = 0;
     for(i=N/2-1;i>=0;i--)
     {
         heapify(a, N, i);
     }
 
     for(i=N-1;i>=0;i--)
-    {
+    {   
+        count ++;
         swap(&a[i], &a[0]);
         heapify(a, i, 0);   
     }
+    printf("\nNo.of Comparisions done: - %d\n", count);
 }
 
 void display(int arr[], int n)
