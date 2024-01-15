@@ -50,6 +50,7 @@
         }
         return root;
     }
+    
 
     // search node
     struct node* search_node(struct node *root, int value)
@@ -104,7 +105,6 @@
             if (root -> left == NULL && root -> right == NULL)
             {
                 free(root);
-                return NULL;
             }
 
             // Case 2: Node has right child.

@@ -8,7 +8,7 @@ int front = -1, rear = -1;
 int isFull() 
 {
   if ((front == rear + 1) || (front == 0 && rear == SIZE - 1)) 
-	return 1;
+	  return 1;
   else
   	return 0;
 }
@@ -40,7 +40,7 @@ int deQueue()
   if (isEmpty()) 
   {
     printf("\n Queue is empty !! \n");
-    return (-1);
+    return -1;
   } 
   else 
   {

@@ -11,7 +11,7 @@ int top = -1;
 	{
 		if (top==-1)
 			return 1;
-		else;
+		else
 			return 0;
 	}
 	
@@ -76,8 +76,4 @@ int main()
 		printf("%d\n", stack[top]);
 		top = top - 1;
 	}
-	
-	
-	
-	
 }
