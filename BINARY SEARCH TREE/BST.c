@@ -65,7 +65,7 @@
             return search_node(root -> right, value);
     }
 
-    int get_right_min(struct node *root)
+    int get_min(struct node *root)
     {
         struct node *temp;
         //  min value should be present in the left most node
@@ -134,7 +134,7 @@
             // Since we find the min value from the right subtree call the remove function with root->right.
             else
             {
-                int rightmin = get_right_min(root -> right);
+                int rightmin = get_min(root -> right);
                 root -> data = rightmin;
                 root -> right = delete_node(root -> right, rightmin);
             }
